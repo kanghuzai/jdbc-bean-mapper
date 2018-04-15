@@ -4,3 +4,5 @@
 
 # 二期开发功能
 - 直接根据bean实体生成基础的INSERT、 UPDATE、 DELETE、 SELECT语句，完全取代Mybatis。
+
+# 1.1
