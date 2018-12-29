@@ -64,6 +64,28 @@
         </dependency>
     </dependencies>
 
+
+    <scm>
+        <connection>scm:git:https://github.com/zcgewu/jdbc-bean-mapper.git</connection>
+        <developerConnection>scm:git:https://github.com/zcgewu/jdbc-bean-mapper.git</developerConnection>
+        <url>https://github.com/zcgewu/jdbc-bean-mapper/tree/master</url>
+        <tag>HEAD</tag>
+    </scm>
+
+    <distributionManagement>
+        <repository>
+            <id>releases</id>
+            <name>Yougou Releases</name>
+            <url>http://m2repo.wonhigh.cn:8081/nexus/content/repositories/releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <name>Yougou Snapshots</name>
+            <url>http://m2repo.wonhigh.cn:8081/nexus/content/repositories/snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+
     <build>
         <plugins>
             <plugin>
@@ -73,6 +95,11 @@
                     <source>1.7</source>
                     <target>1.7</target>
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>2.5.3</version>
             </plugin>
         </plugins>
     </build>
